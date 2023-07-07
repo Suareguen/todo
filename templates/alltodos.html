@@ -1,0 +1,14 @@
+{% extends "./layouts/base.html" %}
+
+
+{% block title %} All Todos {% endblock% %}
+
+
+{% block content %}
+
+    {% for todo in todos: %}
+        <p>{{todo.title}}</p>
+        <p>{{todo.status}}</p>
+        <p>{{todo.text}}</p>
+    {% endfor %}
+{% endblock% %}
